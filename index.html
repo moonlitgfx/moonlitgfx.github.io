@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
 
+    <!-- Google Font for Pretty Header -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="YOUR-FAVICON-LINK-HERE">
 
@@ -12,55 +15,66 @@
         body {
             margin: 0;
             padding: 0;
-            background: #3a557e;
+            background: #161616;
             font-family: "Georgia", serif;
             color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* centers everything vertically */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            padding: 20px;
             text-align: center;
         }
 
         .header-img {
             width: 100%;
-            max-width: 500px;
-            margin: 20px auto;
+            max-width: 450px;
+            margin: 0 auto 30px;
             display: block;
             border-radius: 10px;
         }
 
         .button-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 15px;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 0 20px;
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+            gap: 12px;
+            max-width: 500px;
+            margin: 0 auto 30px;
         }
 
         .nav-button {
-            background: rgba(255, 255, 255, 0.15);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 20px;
-            border-radius: 12px;
+            background: #a42f57;
+            border: 2px solid #c34a72;
+            padding: 18px;
+            border-radius: 6px; /* sharper corners */
             text-decoration: none;
             color: #ffffff;
             font-weight: bold;
+            font-size: 0.9rem;
             transition: 0.3s;
         }
 
         .nav-button:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: #c34a72; /* lighter accent */
             transform: scale(1.05);
         }
 
         .title {
-            margin-top: 30px;
-            font-size: 1.8rem;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
             letter-spacing: 1px;
         }
 
         .description {
             max-width: 600px;
-            margin: 10px auto 40px;
-            padding: 0 20px;
+            margin: 0 auto;
+            padding: 0 15px;
             line-height: 1.6;
             text-align: justify;
         }
@@ -68,6 +82,8 @@
 </head>
 
 <body>
+
+<div class="container">
 
     <!-- Header Image -->
     <img class="header-img" src="YOUR-HEADER-IMAGE-LINK-HERE" alt="Header Image">
@@ -78,19 +94,21 @@
         <a class="nav-button" href="#">RULES</a>
         <a class="nav-button" href="#">REQUESTS</a>
         <a class="nav-button" href="#">EXAMPLES</a>
-        <a class="nav-button" href="#">BUTTON 5</a>
-        <a class="nav-button" href="#">BUTTON 6</a>
-        <a class="nav-button" href="#">BUTTON 7</a>
-        <a class="nav-button" href="#">BUTTON 8</a>
+        <a class="nav-button" href="#">BTN 5</a>
+        <a class="nav-button" href="#">BTN 6</a>
+        <a class="nav-button" href="#">BTN 7</a>
+        <a class="nav-button" href="#">BTN 8</a>
     </div>
 
     <!-- Title + Description -->
     <div class="title">TITLE HERE</div>
 
     <div class="description">
-        Your description goes here. This text will wrap neatly and stay centered on desktop and mobile. 
+        Your description goes here. This text will wrap neatly and stay centered on desktop and mobile.
         You can write as much or as little as you want — the layout will adjust smoothly.
     </div>
+
+</div>
 
 </body>
 </html>
