@@ -34,28 +34,41 @@
         .title {
             font-family: "Coiny", cursive;
             font-size: 2.4rem;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
-        .rules-text {
-            max-width: 600px;
-            margin: 0 auto 40px;
-            padding: 0 15px;
-            line-height: 1.55;
+        .rule-block {
+            margin-bottom: 28px;
+            text-align: left;
+        }
+
+        .rule-heading {
+            font-family: "Coiny", cursive;
+            font-size: 1.3rem;
+            color: #c34a72;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+
+        .rule-text {
             font-size: 0.85rem;
+            line-height: 1.55;
             text-align: justify;
+            padding: 0 10px;
         }
 
         .home-button {
             background: #a42f57;
             border: 2px solid #c34a72;
-            padding: 12px 20px;
+            padding: 8px 14px; /* way smaller */
             text-decoration: none;
             color: #ffffff;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.75rem; /* smaller text */
             border-radius: 0;
             transition: 0.25s;
+            display: inline-block;
+            margin-top: 20px;
         }
 
         .home-button:hover {
@@ -71,13 +84,33 @@
 
     <div class="title">RULES</div>
 
-    <div class="rules-text">
-        Write all your rules here. The text will stay small, clean, and justified for easy reading.
-        This layout is fully responsive, so it will look just as good on mobile as it does on desktop.
-        Add as many paragraphs as you want — the spacing will adjust naturally.
+    <!-- Rule 1 -->
+    <div class="rule-block">
+        <div class="rule-heading">Respect</div>
+        <div class="rule-text">
+            Write your first rule here. This text is small, clean, and justified for a polished look. 
+            You can add as much detail as you want — the layout will adjust naturally.
+        </div>
     </div>
 
-    <a class="home-button" href="index.html">BACK TO HOME</a>
+    <!-- Rule 2 -->
+    <div class="rule-block">
+        <div class="rule-heading">Boundaries</div>
+        <div class="rule-text">
+            Your second rule goes here. The accented title above it keeps everything organized and cute.
+        </div>
+    </div>
+
+    <!-- Rule 3 -->
+    <div class="rule-block">
+        <div class="rule-heading">Content</div>
+        <div class="rule-text">
+            Your third rule goes here. Add more rule blocks as needed — the spacing will stay consistent.
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <a class="home-button" href="index.html">BACK HOME</a>
 
 </div>
 
