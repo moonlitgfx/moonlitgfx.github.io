@@ -5,77 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
 
-    <!-- Google Font for Pretty Header -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Viaoda+Libre&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="https://i.postimg.cc/L64WMPkj/dashhh.png" href="YOUR-FAVICON-LINK-HERE">
+    <link rel="icon" type="image/png" href="YOUR-FAVICON-LINK-HERE">
 
     <style>
         body {
             margin: 0;
             padding: 0;
             background: #161616;
-            font-family: "Georgia", serif;
             color: #f2f2f2;
+            font-family: "Viaoda Libre", serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh; /* centers everything vertically */
+            text-align: center;
         }
 
         .container {
             width: 100%;
-            max-width: 700px;
+            max-width: 650px;
             padding: 20px;
-            text-align: center;
         }
 
         .header-img {
             width: 100%;
-            max-width: 450px;
+            max-width: 420px;
             margin: 0 auto 30px;
             display: block;
-            border-radius: 10px;
         }
 
         .button-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-            gap: 12px;
-            max-width: 500px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            max-width: 300px;
             margin: 0 auto 30px;
         }
 
         .nav-button {
             background: #a42f57;
             border: 2px solid #c34a72;
-            padding: 18px;
-            border-radius: 6px; /* sharper corners */
+            padding: 20px;
             text-decoration: none;
             color: #ffffff;
             font-weight: bold;
             font-size: 0.9rem;
+            border-radius: 0; /* sharp corners */
             transition: 0.3s;
         }
 
         .nav-button:hover {
-            background: #c34a72; /* lighter accent */
+            background: #c34a72;
             transform: scale(1.05);
         }
 
         .title {
-            font-family: "Cormorant Garamond", serif;
-            font-size: 2.2rem;
+            font-family: "Love Light", cursive;
+            font-size: 3rem;
             margin-bottom: 10px;
-            letter-spacing: 1px;
         }
 
         .description {
-            max-width: 600px;
+            max-width: 550px;
             margin: 0 auto;
             padding: 0 15px;
-            line-height: 1.6;
+            line-height: 1.5;
+            font-size: 0.9rem; /* smaller text */
             text-align: justify;
         }
     </style>
@@ -88,24 +87,19 @@
     <!-- Header Image -->
     <img class="header-img" src="YOUR-HEADER-IMAGE-LINK-HERE" alt="Header Image">
 
-    <!-- Button Grid -->
+    <!-- 4 Centered Buttons -->
     <div class="button-grid">
         <a class="nav-button" href="#">BLOG</a>
         <a class="nav-button" href="#">RULES</a>
         <a class="nav-button" href="#">REQUESTS</a>
         <a class="nav-button" href="#">EXAMPLES</a>
-        <a class="nav-button" href="#">BTN 5</a>
-        <a class="nav-button" href="#">BTN 6</a>
-        <a class="nav-button" href="#">BTN 7</a>
-        <a class="nav-button" href="#">BTN 8</a>
     </div>
 
     <!-- Title + Description -->
     <div class="title">TITLE HERE</div>
 
     <div class="description">
-        Your description goes here. This text will wrap neatly and stay centered on desktop and mobile.
-        You can write as much or as little as you want — the layout will adjust smoothly.
+        Your description goes here. This text is smaller, cleaner, and neatly justified for a polished portfolio look. It will stay centered and readable on both desktop and mobile.
     </div>
 
 </div>
