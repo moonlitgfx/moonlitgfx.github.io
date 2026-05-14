@@ -6,7 +6,7 @@
     <title>Your Portfolio</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Elms+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="YOUR-FAVICON-LINK-HERE">
@@ -17,11 +17,11 @@
             padding: 0;
             background: #161616;
             color: #f2f2f2;
-            font-family: "Viaoda Libre", serif;
+            font-family: "Elms Sans", sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* centers everything vertically */
+            min-height: 100vh;
             text-align: center;
         }
 
@@ -34,28 +34,30 @@
         .header-img {
             width: 100%;
             max-width: 420px;
-            margin: 0 auto 30px;
+            margin: 0 auto 25px;
             display: block;
         }
 
-        .button-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
-            max-width: 300px;
-            margin: 0 auto 30px;
+        /* Small cute links across the page */
+        .link-row {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
         }
 
         .nav-button {
             background: #a42f57;
             border: 2px solid #c34a72;
-            padding: 20px;
+            padding: 10px 14px;
             text-decoration: none;
             color: #ffffff;
-            font-weight: bold;
-            font-size: 0.9rem;
+            font-weight: 500;
+            font-size: 0.8rem;
             border-radius: 0; /* sharp corners */
-            transition: 0.3s;
+            transition: 0.25s;
+            min-width: 70px;
         }
 
         .nav-button:hover {
@@ -64,8 +66,8 @@
         }
 
         .title {
-            font-family: "Love Light", cursive;
-            font-size: 3rem;
+            font-family: "Coiny", cursive;
+            font-size: 2.6rem;
             margin-bottom: 10px;
         }
 
@@ -74,7 +76,7 @@
             margin: 0 auto;
             padding: 0 15px;
             line-height: 1.5;
-            font-size: 0.9rem; /* smaller text */
+            font-size: 0.85rem; /* smaller text */
             text-align: justify;
         }
     </style>
@@ -87,8 +89,8 @@
     <!-- Header Image -->
     <img class="header-img" src="YOUR-HEADER-IMAGE-LINK-HERE" alt="Header Image">
 
-    <!-- 4 Centered Buttons -->
-    <div class="button-grid">
+    <!-- Small Cute Links -->
+    <div class="link-row">
         <a class="nav-button" href="#">BLOG</a>
         <a class="nav-button" href="#">RULES</a>
         <a class="nav-button" href="#">REQUESTS</a>
