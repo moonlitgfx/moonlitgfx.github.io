@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Elms+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="YOUR-FAVICON-LINK-HERE">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #161616;
+            color: #f2f2f2;
+            font-family: "Elms Sans", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .title {
+            font-family: "Coiny", cursive;
+            font-size: 2.4rem;
+            margin-bottom: 25px;
+        }
+
+        .description {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            padding: 0 15px;
+            line-height: 1.55;
+            font-size: 0.85rem;
+            text-align: justify;
+        }
+
+        /* Responsive image grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            border: 2px solid #a42f57;
+            border-radius: 0;
+            display: block;
+            transition: 0.25s;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.03);
+            border-color: #c34a72;
+        }
+
+        .home-button {
+            background: #a42f57;
+            border: 2px solid #c34a72;
+            padding: 8px 14px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.75rem;
+            border-radius: 0;
+            transition: 0.25s;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .home-button:hover {
+            background: #c34a72;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">PORTFOLIO</div>
+
+    <div class="description">
+        Below is a collection of my work — headers, icons, graphics, backgrounds, and more. 
+        Click any image to view it full size. This gallery automatically adjusts to fit mobile screens.
+    </div>
+
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="IMAGE-LINK-1" alt="">
+        <img src="IMAGE-LINK-2" alt="">
+        <img src="IMAGE-LINK-3" alt="">
+        <img src="IMAGE-LINK-4" alt="">
+        <img src="IMAGE-LINK-5" alt="">
+        <img src="IMAGE-LINK-6" alt="">
+        <!-- Add as many as you want -->
+    </div>
+
+    <a class="home-button" href="index.html">BACK HOME</a>
+
+</div>
+
+</body>
+</html>
