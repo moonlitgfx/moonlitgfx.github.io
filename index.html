@@ -1,1 +1,96 @@
-hello!! 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="YOUR-FAVICON-LINK-HERE">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #3a557e;
+            font-family: "Georgia", serif;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        .header-img {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .nav-button {
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        .title {
+            margin-top: 30px;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            max-width: 600px;
+            margin: 10px auto 40px;
+            padding: 0 20px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Image -->
+    <img class="header-img" src="YOUR-HEADER-IMAGE-LINK-HERE" alt="Header Image">
+
+    <!-- Button Grid -->
+    <div class="button-grid">
+        <a class="nav-button" href="#">BLOG</a>
+        <a class="nav-button" href="#">RULES</a>
+        <a class="nav-button" href="#">REQUESTS</a>
+        <a class="nav-button" href="#">EXAMPLES</a>
+        <a class="nav-button" href="#">BUTTON 5</a>
+        <a class="nav-button" href="#">BUTTON 6</a>
+        <a class="nav-button" href="#">BUTTON 7</a>
+        <a class="nav-button" href="#">BUTTON 8</a>
+    </div>
+
+    <!-- Title + Description -->
+    <div class="title">TITLE HERE</div>
+
+    <div class="description">
+        Your description goes here. This text will wrap neatly and stay centered on desktop and mobile. 
+        You can write as much or as little as you want — the layout will adjust smoothly.
+    </div>
+
+</body>
+</html>
