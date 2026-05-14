@@ -54,8 +54,11 @@
             margin-bottom: 30px;
         }
 
+        /* Uniform square thumbnails */
         .image-grid img {
             width: 100%;
+            aspect-ratio: 1 / 1; /* makes every box a perfect square */
+            object-fit: cover;   /* fills the square without distortion */
             border: 2px solid #a42f57;
             border-radius: 0;
             display: block;
@@ -129,20 +132,6 @@
         <img src="IMAGE-LINK-4" alt="" onclick="openLightbox(this.src)">
         <img src="IMAGE-LINK-5" alt="" onclick="openLightbox(this.src)">
         <img src="IMAGE-LINK-6" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-7" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-8" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-9" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-10" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-11" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-12" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-13" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-14" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-15" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-16" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-17" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-18" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-19" alt="" onclick="openLightbox(this.src)">
-        <img src="IMAGE-LINK-20" alt="" onclick="openLightbox(this.src)">
         <!-- Add as many as you want -->
     </div>
 
